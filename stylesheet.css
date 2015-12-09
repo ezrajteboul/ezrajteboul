@@ -27,7 +27,7 @@ div {
 	padding-top: 5px;
 	font-size: 16px;
 	font-family: Futura, sans-serif;
-	color: #ffffff;
+	color: #000000;
 }
 
 h4 {
@@ -80,7 +80,7 @@ a:hover {
 	font-family: Futura, sans-serif;
 	font-size: 14px;
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 }
 
 #footer p {
