@@ -13,7 +13,7 @@ div {
 }
 
 #title {
-	float:left;
+	float:center;
 	margin-left: 15px;
 	padding-top: 20px;
 	font-size: 22px;
