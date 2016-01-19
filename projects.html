@@ -61,6 +61,7 @@ void setup()
        GD.putstr(10, 1, "Sprott-Linz P chaotic attractor");
 }
 
+<<<<<<< HEAD
 void loop()
 {
        xn = a*y+z;
@@ -72,20 +73,44 @@ void loop()
        GD.sprite(i++, 100+(140*x), 190+(132*y), 0, 0, 0);
 }
 </pre>
+=======
+				void loop()
+				{
+				       xn = a*y+z;
+				       yn = -x+pow(y,2);
+				       zn = x+y;
+				       x = x+xn*dt;
+				       y = y+yn*dt;
+				       z = z+zn*dt;
+				       GD.sprite(i++, 100+(140*x), 190+(132*y), 0, 0, 0);
+				}
+			</p>
+			
+			<p>I'm currently working on getting a better understanding of JLS's code and working to archive all the attractor's they've shared online in case the cached pages disappear</p>
+			
+>>>>>>> gh-pages
 			<h5> Eurorack format Pure Data module (with Touchscreen?)
 				</h5>
 				
 			<p>status: R&D</p>
 			<p>
-				
+				This is a project to combine a Beaglebone black running Pure Data in Ubuntu and take advantage of the i/o natively available onboard. I'm currently working on getting pure data to function fully.  
 				</p>
 				
-			<h5> 
+			<h5> Acht Brücken project: "singer" (a collaborative project with COLLCTV)
 				</h5>
 			<p>
-				
+	status: completed, de-installed 			
 				</p>
+<<<<<<< HEAD
 				</div>
+=======
+				
+				<p> This project was a two-week installation piece designed for the courtyard of the Sankt-Peter Kunst Station / church space in Koln, Germany. It was a collaboration between Shannon Werle, Angela Kim, Carlos Dominguez and myself. I was in charge of designing the motor system and contributed to fabrication efforts. The installation won second place for art installations in the festival. </p>
+				
+				<iframe src="https://player.vimeo.com/video/93996161" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/93996161">Singer - collctv // bottow view</a> from <a href="https://vimeo.com/user27628607">redthunderaudio</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+				
+>>>>>>> gh-pages
 			</section>
 			
 		<section class="footer">
