@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="src/styles/reset.css"/><title></title>
+	</head>
+	<body>
+		
+		<section class="header">
+			<h1><a href="index.html">Ezra J. Teboul</a></h1>
+			<h2>Make // Document // Share </h2>
+			<h3><a href="mailto:ezra@redthunderaudio.com">email me</a>
+			</section> 
+			
+		<section class="body">
+			
+			<h4>In reverse chronological order:</h4>
+			
+			<h5> Gameduino Chaotic Oscillator (audio+video synthesizer)
+				</h5>
+			<p>status: R&D</p>
+			<p>This is a project to combine a v.1 Gameduino shield (with VGA and 12 bit Audio out), a regular Arduino Uno and the code provided from <a href="http://jlswbs.blogspot.com/">a now defunct blog</a> to generate audio-visual chaos (in the form of chaotic noise/signal generators and attractors). 
+				
+				Here is a copy of the code for a Sprott-Linz P Chaotic Attractor: 
+				
+
+				<p>#include "SPI.h"
+				#include "GD.h"
+
+				       byte i;
+				       float a = 2.7;
+				       float x = 0.1;
+				       float y = 0;
+				       float z = 0;
+				       float xn = x;
+				       float yn = y;
+				       float zn = z;
+				       float dt = 0.01; 
+       
+				void setup()
+				{
+				       GD.begin();
+				       GD.ascii();
+				       GD.wr16(RAM_SPRPAL + (0 * 2), 0x8000);
+				       GD.wr16(RAM_SPRPAL + (1 * 2), RGB(255, 255, 255));
+				       GD.fill(RAM_SPRIMG, 0, 256);
+				       GD.wr(RAM_SPRIMG + 0x78, 1);
+				       GD.putstr(10, 1, "Sprott-Linz P chaotic attractor");
+				}
+
+				void loop()
+				{
+				       xn = a*y+z;
+				       yn = -x+pow(y,2);
+				       zn = x+y;
+				       x = x+xn*dt;
+				       y = y+yn*dt;
+				       z = z+zn*dt;
+				       GD.sprite(i++, 100+(140*x), 190+(132*y), 0, 0, 0);
+				}
+			</p>
+			<h5> Eurorack format Pure Data module (with Touchscreen?)
+				</h5>
+				
+			<p>status: R&D</p>
+			<p>
+				
+				</p>
+				
+			<h5> 
+				</h5>
+			<p>
+				
+				</p>
+			</section>
+			
+		<section class="footer">
+			<p> This website was designed with the help and patience of the great Karl Hohn.</p>
+			</section>
+			
+				</body>
+			</html>
