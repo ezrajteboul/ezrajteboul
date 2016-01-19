@@ -1,89 +1,84 @@
-div {
-	border-radius: 5px;
-}
-
-#header {
-	z-index: 1;
-	position: fixed;
-	width: 97.5%;
-	margin-top: -20px;
-	height: 60px;
-	background-color: #ffffff;
-	margin-bottom: 10px;
-}
-
-#title {
-	float:left;
-	margin-left: 15px;
-	padding-top: 20px;
-	font-size: 22px;
-	font-family: Courier;
-	color: #000000;
-}
-
-#email{
-	float:right;
-	margin-right: 5px;
-	padding-top: 5px;
+body {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	font-family: courier, sans-serif;
-	color: #000000;
+}
+
+p {
+	margin-bottom: 1em
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 0.8em;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: right;
 }
 
 h4 {
-	margin-left: 5px;
-	margin-bottom: 15px;
-	font-family: Futura, sans-serif;
+	text-indent: 5em;
+	margin-bottom: 1.5em;
 }
 
-.right p {
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: -10px;
-	font-family: Futura, serif;
-	color: #000000;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-li {
-	list-style-type: square;
+h3 a {
+	text-decoration: underline;
 }
 
-a:hover {
-	font-weight: bold;
+a:hover,
+a:focus {
+	color: red;
 }
 
-.left {
-	position: relative;
-	float: left;
-	margin-top: 50px;
-	width: 10%;
-	height: 400px;
-	background-color: #ffffff;
-	margin-bottom: 10px;
+.header {
+	font-family: Courier, monospace;
+	margin: 2em 1em;
 }
 
-.right {
-	position: relative;
-	float: right;
-	margin-top: 50px;
-	width: 88%;
-	height: 400px;
-	background-color: #ffffff;
-	margin-bottom: 10px;
-}
-
-#footer {
-	position: relative;
-	height: 50px;
-	background-color: #ffffff;
-	clear: both;
-	font-family: Courier, sans-serif;
-	font-size: 14px;
+ul.nav {
+	list-style-type: none;
 	text-align: center;
-	color: #000000;
 }
 
-#footer p {
-	position: relative;
-	padding-top: 15px;
+ul.nav li {
+	display: inline-block;
+}
+
+.container {
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.footer {
+	font-family: Courier, monospace;
+	text-align: center;
+	font-size: 0.85em;
+	margin-top: 6em;
+	margin-bottom: 2em;
+}
+
+/* media query applies rules to devices with a screen size of 650px or less */
+@media (max-width: 650px) {
+	h3 {
+		margin: 0.5em auto;
+	}
+
+	h4 {
+		text-indent: 0;
+		text-align: center;
+	}
 }
